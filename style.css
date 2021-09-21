@@ -1,0 +1,97 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+  --josefin-sans: "Josefin Sans", sans-serif;
+  --alata: "Alata", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+}
+
+.display-none {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 327px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__button {
+  background: none;
+  border: none;
+}
+
+#landing {
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing .nav--open {
+  background-image: none;
+  background-color: var(--black);
+  justify-content: flex-start;
+}
+
+.landing__text {
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 42px;
+  border: 1px solid var(--white);
+  width: 85%;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 376px) {
+  .nav {
+    width: 90%;
+  }
+
+  #landing {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #landing {
+    background-image: url("./images/desktop/image-hero.jpg");
+  }
+}
