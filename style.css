@@ -60,6 +60,8 @@ header {
   border: none;
 }
 
+/* --- LANDING --- */
+
 #landing {
   background-image: url("./images/mobile/image-hero.jpg");
   background-position: center;
@@ -114,6 +116,44 @@ header {
   width: 0;
 } */
 
+/* --- ABOUT --- */
+/* #about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.about__container {
+  width: 85%;
+  margin: 5rem auto;
+}
+
+.about__image {
+  width: 100%;
+}
+
+.about__title {
+  font-size: 36px;
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 3rem;
+}
+
+.about__text {
+  font-size: 1rem;
+  font-family: var(--alata);
+  color: hsl(0, 0%, 55%);
+  margin-top: 2rem;
+}
+
+.about__title,
+.about__text {
+  text-align: center;
+}
+
+/* --- MEDIA QUERIES --- */
+
 @media screen and (min-width: 376px) {
   .nav {
     width: 90%;
@@ -129,4 +169,8 @@ header {
   #landing {
     background-image: url("./images/desktop/image-hero.jpg");
   }
+
+  /*   #landing__text {
+    width: 40%;
+  } */
 }
