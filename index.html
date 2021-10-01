@@ -43,13 +43,10 @@
     <a href="#products" class="landing__nav-link">Products</a>
     <a href="#support" class="landing__nav-link">Support</a>
   </section>
-  <section id="about">
+  <section id="about-mobile">
     <div class="about__container">
       <img 
         class="about__image" 
-        srcset="images/desktop/image-interactive.jpg 1440w,
-                images/mobile/image-interactive.jpg 375w"
-        sizes="(min-width: 1440px): 1440w, 375w"
         src="images/mobile/image-interactive.jpg"
       >
       <div class="about__text-container">
@@ -61,12 +58,23 @@
       </div>
     </div>
   </section>
+  <section id="about-desktop">
+    <div class="about__container">
+      <div class="about__text-container">
+        <h2 class="about__title title">The leader in interactive VR</h2>
+        <p class="about__text text">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          products have transformed businesses through digital experiences that bind 
+          to their brand.</p>
+      </div>
+    </div>
+  </section>
   <section id="products">
     <div class="products__header">
-      <h2 class="products__title title">Our products</h2>
+      <h2 class="products__title title">Our creations</h2>
       <button class="products__button" id="see-all--desktop">See all</button>
     </div>
-    <div class="products__container">
+    <div class="products__grid">
       <div id="deep-earth"class="products__card">
         <h3 class="sub-title">Deep earth</h3>
       </div>
@@ -94,7 +102,11 @@
     </div>
   </section>
   
-  
+  <!-- 
+        srcset="images/desktop/image-interactive.jpg 1440w, 
+               images/mobile/image-interactive.jpg 375w 
+         sizes="(min-width: 1440px): 1440w, 375w" 
+  -->
   
   
   
