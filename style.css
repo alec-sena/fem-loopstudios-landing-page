@@ -72,6 +72,11 @@ header {
   z-index: 10;
 }
 
+#header__nav-links {
+  display: none;
+  visibility: hidden;
+}
+
 .nav {
   width: 327px;
   display: flex;
@@ -208,6 +213,24 @@ header {
   font-size: 28px;
 }
 
+.products__button {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px;
+  border: 1px solid hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-family: var(--josefin-sans);
+  font-weight: 700;
+  font-size: 22px;
+  padding: 9px 36px;
+  cursor: pointer;
+}
+
+.products__button:hover,
+.products__button:active {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
 #see-all--desktop {
   display: none;
   visibility: hidden;
@@ -265,6 +288,26 @@ header {
 
   .sub-title {
     font-size: 1.5rem;
+  }
+
+  #nav-hamburger {
+    display: none;
+    visibility: hidden;
+  }
+
+  #header__nav-links {
+    display: flex;
+    visibility: visible;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  #header__nav-links a {
+    font-family: var(--alata);
+    font-size: 28px;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
   }
 
   #landing {
