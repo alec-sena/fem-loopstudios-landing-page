@@ -439,9 +439,38 @@ header {
     margin-top: 184px;
   }
 
+  .products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .products__title {
+    text-align: center;
+    height: 48px;
+    margin-top: 54px;
+  }
+
+  .products__header,
+  .products__grid {
+    width: 85%;
+  }
+
+  #see-all--mobile {
+    display: none;
+    visibility: hidden;
+  }
+
   #see-all--desktop {
     display: block;
     visibility: visible;
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 650px 650px;
+    grid-column-gap: 24px;
   }
 
   #deep-earth {
@@ -473,6 +502,25 @@ header {
   }
 
   #make-it-fisheye {
-    background-image: url("images/mobile/image-fisheye.jpg");
+    background-image: url("images/desktop/image-fisheye.jpg");
+  }
+
+  .products__card {
+    background-size: cover;
+  }
+
+  #footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer__nav-links {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .footer__nav-link:not(:first-of-type) {
+    margin-left: 2rem;
   }
 }
