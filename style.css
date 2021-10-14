@@ -286,10 +286,16 @@ header {
 
 /* --- FOOTER --- */
 
-#footer {
+footer {
+  background-color: hsl(0, 0%, 0%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__main-container {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  background-color: hsl(0, 0%, 0%);
   display: grid;
   justify-items: center;
 }
@@ -513,9 +519,10 @@ header {
     background-size: cover;
   }
 
-  #footer {
-    display: grid;
+  .footer__main-container {
     grid-template-columns: 50% 50%;
+    width: 85%;
+    justify-items: normal;
   }
 
   .footer__nav-links {
