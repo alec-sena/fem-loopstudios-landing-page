@@ -338,6 +338,7 @@ header {
 
 .attribution {
   color: hsl(0, 0%, 55%);
+  font-family: var(--alata);
 }
 
 /* --- MEDIA QUERIES --- */
@@ -384,10 +385,13 @@ header {
 
   #landing {
     background-image: url("./images/desktop/image-hero.jpg");
+    justify-content: start;
   }
 
   #landing__text {
     width: 30%;
+    font-size: 48px;
+    margin-left: 5%;
   }
 
   #about-mobile {
@@ -522,5 +526,27 @@ header {
 
   .footer__nav-link:not(:first-of-type) {
     margin-left: 2rem;
+  }
+
+  #footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .footer__social-media {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+  }
+
+  .footer__social-media svg:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+
+  .footer__credit {
+    margin-bottom: 1.5rem;
   }
 }
