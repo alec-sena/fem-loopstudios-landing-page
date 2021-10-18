@@ -56,7 +56,7 @@ body {
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 15px;
   font-family: var(--alata);
   color: hsl(0, 0%, 55%);
 }
@@ -78,6 +78,14 @@ header {
 #header__nav-links {
   display: none;
   visibility: hidden;
+}
+
+#header__nav-links a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+#header__nav-links a:hover {
+  border-bottom: 2px solid white;
 }
 
 .nav {
@@ -104,6 +112,14 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: unset;
+  width: 100%;
+}
+
+.landing__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* #landing .nav--open {
@@ -351,7 +367,7 @@ footer {
 
 @media screen and (min-width: 376px) {
   .nav {
-    width: 90%;
+    width: 80%;
   }
 
   #landing {
@@ -391,14 +407,23 @@ footer {
 
   #landing {
     background-image: url("./images/desktop/image-hero.jpg");
+    background-size: cover;
+    height: 650px;
+    justify-content: center;
+  }
+
+  .landing__container {
+    width: 80%;
+    display: flex;
     justify-content: start;
+    align-items: center;
   }
 
   #landing__text {
-    width: 40%;
+    width: 50%;
     font-size: 80px;
     padding-top: 30px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
 
   #about-mobile {
@@ -409,7 +434,7 @@ footer {
   #about-desktop {
     display: block;
     visibility: visible;
-    height: 650px;
+    height: 500px;
   }
 
   .about__container {
@@ -421,11 +446,12 @@ footer {
     justify-content: end;
     align-items: flex-end;
     height: 100%;
+    width: 80%;
   }
 
   .about__text-container {
     z-index: 10;
-    height: 60%;
+    height: 70%;
     width: 50%;
     background-color: hsl(0, 0%, 100%);
     align-self: flex-end;
@@ -465,7 +491,7 @@ footer {
 
   .products__header,
   .products__grid {
-    width: 85%;
+    width: 80%;
   }
 
   #see-all--mobile {
@@ -480,7 +506,7 @@ footer {
 
   .products__grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 650px 650px;
+    grid-template-rows: 450px 450px;
     grid-column-gap: 24px;
   }
 
@@ -522,7 +548,7 @@ footer {
 
   .footer__main-container {
     grid-template-columns: 50% 50%;
-    width: 85%;
+    width: 80%;
     justify-items: normal;
   }
 
@@ -556,5 +582,15 @@ footer {
 
   .footer__credit {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  #landing__text {
+    width: 45%;
+  }
+
+  .products__grid {
+    grid-template-rows: 650px 650px;
   }
 }
