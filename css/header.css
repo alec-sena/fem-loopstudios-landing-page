@@ -10,7 +10,17 @@ header {
   z-index: 10;
 }
 
-#header__nav-links {
+.header__container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  z-index: 10;
+}
+
+/* #header__nav-links {
   display: none;
   visibility: hidden;
 }
@@ -27,9 +37,9 @@ header {
   top: 25%;
   left: 30%;
   border-top: 1px solid white;
-}
+} */
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   #header__nav-links {
     display: flex;
     visibility: visible;
@@ -44,4 +54,4 @@ header {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
   }
-}
+} */
