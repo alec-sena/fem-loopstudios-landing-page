@@ -1,0 +1,97 @@
+#landing {
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: unset;
+  width: 100%;
+}
+
+.landing__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #landing .nav--open {
+  background-image: none;
+  background-color: var(--black);
+  justify-content: center;
+} */
+
+#landing__text {
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 42px;
+  width: 85%;
+  padding: 1rem;
+  border: 1px solid var(--white);
+}
+
+#landing__nav-links {
+  height: 650px;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+
+.landing__nav-link {
+  text-decoration: none;
+  font-size: 32px;
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 24px;
+  margin-left: 8%;
+  cursor: pointer;
+}
+
+/* #landing__nav-links .display-none {
+    width: 0;
+  } */
+
+@media screen and (min-width: 376px) {
+  #landing {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #landing {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    height: 650px;
+    justify-content: center;
+  }
+
+  .landing__container {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #landing__text {
+    width: 50%;
+    font-size: 80px;
+    padding-top: 30px;
+    /* margin-left: 5%; */
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  #landing__text {
+    width: 45%;
+  }
+}
