@@ -1,9 +1,3 @@
-/* #about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 #about-desktop {
   display: none;
   visibility: hidden;

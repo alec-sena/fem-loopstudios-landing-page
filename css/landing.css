@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-#landing__text {
+.landing__text {
   font-family: var(--josefin-sans);
   text-transform: uppercase;
   color: var(--white);
@@ -31,7 +31,7 @@
 @media screen and (min-width: 376px) {
   #landing {
     background-size: cover;
-    height: 100vh;
+    height: 650px;
   }
 }
 
@@ -39,7 +39,6 @@
   #landing {
     background-image: url("../images/desktop/image-hero.jpg");
     background-size: cover;
-    height: 650px;
     justify-content: center;
   }
 
@@ -50,16 +49,15 @@
     align-items: center;
   }
 
-  #landing__text {
+  .landing__text {
     width: 50%;
-    font-size: 80px;
+    font-size: 5rem;
     padding-top: 30px;
-    /* margin-left: 5%; */
   }
 }
 
 @media screen and (min-width: 1700px) {
-  #landing__text {
+  .landing__text {
     width: 45%;
   }
 }
